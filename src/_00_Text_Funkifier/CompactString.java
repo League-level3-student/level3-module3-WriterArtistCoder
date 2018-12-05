@@ -11,9 +11,9 @@ public class CompactString extends SpecialString {
 		for (int i = 0; i < s.length(); i++) {
 			if (i%2 == 1) {
 				if (i == s.length()-1) {
-					s = s.substring(0, i-1);
+					s = s.substring(0, i);
 				} else {
-					s = s.substring(0, i-1) + s.substring(i+1);
+					s = s.substring(0, i) + s.substring(i+1);
 				}
 			}
 		}

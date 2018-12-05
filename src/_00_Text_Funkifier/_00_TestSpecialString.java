@@ -19,7 +19,7 @@ public class _00_TestSpecialString {
 	@Test
 	public void testBackwardsString() {
 		SpecialString bs = new BackwardsString("This is a test");
-		System.out.println(bs);
+		System.out.println(bs + " //Backwards");
 		assertEquals("tset a si sihT", bs.toString());
 	}
 	
@@ -28,7 +28,7 @@ public class _00_TestSpecialString {
 	@Test
 	public void testMixedCapsString() {
 		SpecialString mcs = new MixedCapsString("This is also a test");
-		System.out.println(mcs);
+		System.out.println(mcs + " //Mixed caps");
 		assertEquals("tHiS Is aLsO A TeSt", mcs.toString());
 	}
 	
@@ -39,7 +39,8 @@ public class _00_TestSpecialString {
 	@Test
 	public void testCustomString() {
 		SpecialString c = new CompactString("Thefinaltest");
-		System.out.println(c);
+		//teiatt
+		System.out.println(c + " //Compact");
 		assertEquals("Teiatt", c.toString());
 	}
 }
