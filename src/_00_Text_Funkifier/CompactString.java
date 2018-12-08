@@ -2,22 +2,21 @@ package _00_Text_Funkifier;
 
 public class CompactString extends SpecialString {
 
-	public CompactString(String s) {
-		super(s);
-	}
+    public CompactString(String s) {
+        super(s);
+    }
 
-	@Override
-	public String funkifyText(String s) {
-		for (int i = 0; i < s.length(); i++) {
-			if (i%2 == 1) {
-				if (i == s.length()-1) {
-					s = s.substring(0, i);
-				} else {
-					s = s.substring(0, i) + s.substring(i+1);
-				}
-			}
-		}
-		return s;
-	}
+    @Override
+    public String funkifyText(String s) {
+        String x = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (i%2 == 0) {
+                x += s.charAt(i);
+            }
+        }
+        
+        return x;
+    }
 
 }
+

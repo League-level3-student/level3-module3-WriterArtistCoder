@@ -39,8 +39,7 @@ public class _00_TestSpecialString {
 	@Test
 	public void testCustomString() {
 		SpecialString c = new CompactString("Thefinaltest");
-		//teiatt
 		System.out.println(c + " //Compact");
-		assertEquals("Teiatt", c.toString());
+		assertEquals("Teiats", c.toString());
 	}
 }
